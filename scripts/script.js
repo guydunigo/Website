@@ -1,21 +1,33 @@
 var main = function() {
-    var headerBarElement = $("div.bar li")
-    $("div.bar h1").hover(function() {
-        if ($("div.bar h1").hasClass("active") === false) {
-            $("div.bar h1").animate({
-                "left" : "-=2px",
-                "top" : "-=2px",
-            })
+    var headerBarElement = $("div.bar h1 a")
+    $("div.bar h1 a").hover(function() {
+        $(this).animate({
+            "margin-left": "-=5px",
+            "margin-right": "+=5px"
+        }, "fast")
+    }, function() {
+        $(this).animate({
+            "margin-left": "+=7px",
+            "margin-right": "-=7px"
+        }, "fast")
+        $(this).animate({
+            "margin-left": "-=2px",
+            "margin-right": "+=2px"
+        }, "fast")
+    });
+    $("div.bar li a").hover(function() {
+        if ($(this).hasClass("active") === false) {
+            $(this).animate({
+                color: "#000"
+            }, "fast")
         }
     }, function() {
-        if ($("div.bar h1").hasClass("active") === false) {
-            $("div.bar h1").animate({
-                "left" : "+=2px",
-                "top" : "+=2px",
-                "text-shadow": "5px 5px 3px rgba(0,0,0,0.4)"
-            })
+        if ($(this).hasClass("active") === false) {
+            $(this).animate({
+                color: "#ccc"
+            }, "fast")
         }
-    }, 100)
+    }, 50);
 }
 
 $(document).ready(main);

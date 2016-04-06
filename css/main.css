@@ -61,7 +61,7 @@ body {
     transition-delay: 0.05s;*/
 }
 
-.bar h1.active a:hover {
+.bar h1 a.active:hover {
     margin: 5px;
     margin-left: 20px;
     text-shadow: none;
@@ -87,11 +87,11 @@ ul.nav li {
 }
 
 /* Link of the current page */
-ul.nav li.active a {
+ul.nav li a.active {
     color: #000;
 }
 
-ul.nav li.active a:hover {
+ul.nav li a.active:hover {
     color: #000;
 }
 
@@ -102,8 +102,8 @@ ul.nav a {
 }
 
 ul.nav li a:hover {
-    transition-delay: 0.05s;
-    color: #000;
+    /*transition-delay: 0.05s;
+    color: #000;*/
 }
 
 /*---- Big Title ----*/
