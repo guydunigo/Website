@@ -1,0 +1,161 @@
+/* For debug purpose */
+* div di:hover {
+    border: 1px dashed powderblue;
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg_1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*------ Header ------*/
+.header {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+/*---- Bar ----*/
+.bar {
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(256,256,256);
+    background-color: rgba(256,256,256,0.3);
+    padding: 5px;
+    box-shadow: 0px 5px 5px rgb(0,0,0);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+}
+
+/*-- Website Title --*/
+.bar h1 {
+    display: inline;
+    position: relative;
+}
+
+.bar h1 a {
+    margin: 5px;
+    margin-left: 20px;
+    /* Text infos */
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.bar h1 a:hover {
+    /*margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 3px rgb(0,0,0);
+    text-shadow: 5px 5px 3px rgba(0,0,0,0.4);
+    transition-delay: 0.05s;*/
+}
+
+.bar h1.active a:hover {
+    margin: 5px;
+    margin-left: 20px;
+    text-shadow: none;
+}
+
+/*-- Nav --*/
+ul.nav {
+    display: inline-block;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+ul.nav li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+/* Link of the current page */
+ul.nav li.active a {
+    color: #000;
+}
+
+ul.nav li.active a:hover {
+    color: #000;
+}
+
+/* The other links of the navbar */
+ul.nav a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    transition-delay: 0.05s;
+    color: #000;
+}
+
+/*---- Big Title ----*/
+.header > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 50px;
+    color: rgba(255,255,255,0.5);
+}
+
+/*------- Main ------*/
+.main {
+    height: 500px;
+    padding: 4%;
+    padding-top: 1%;
+    background-color: rgb(256,256,256);
+    background-color: rgba(256,256,256,0.5);
+    margin: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(0,0,0);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.main p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*------ Footer ------*/
+.footer {
+    clear: both;
+    width: 100%;
+    margin: 0;
+}
+
+/*---- Copyright ----*/
+.footer .copy {
+    float: right;
+    position: relative;
+    padding: 10px;
+    padding-right: 3%;
+    font-size: 14px;
+    color: #999999
+}
