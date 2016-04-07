@@ -17,17 +17,13 @@ var main = function() {
     });
     $("div.bar li a").hover(function() {
         if ($(this).hasClass("active") === false) {
-            $(this).animate({
-                color: "#000"
-            }, "fast")
+            $(this).animate({ color: "#000" }, "fast")
         }
     }, function() {
         if ($(this).hasClass("active") === false) {
-            $(this).animate({
-                color: "#ccc"
-            }, "fast")
+            $(this).animate({ color: "#ccc" }, "fast")
         }
-    }, 50);
+    });
 }
 
 $(document).ready(main);
