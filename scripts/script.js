@@ -1,4 +1,5 @@
 var main = function() {
+    // Bounce effect on website name
     var headerBarElement = $("div.bar h1 a")
     $("div.bar h1 a").hover(function() {
         $(this).animate({
@@ -20,6 +21,23 @@ var main = function() {
     }, function() {
         $(this).animate({ color: "#ccc" }, "fast");
     });
-}
+
+    // Scroll to element :
+    $("a#aboutButton").click(function() {
+        $('html, body').animate({
+            'scrollTop': $("div#aboutMe").offset().top
+        }, 500);
+    });
+    $("a#portfolioButton").click(function() {
+        $('html, body').animate({
+            'scrollTop': $("div#portfolio").offset().top
+        }, 500);
+    });
+    $("a#contactButton").click(function() {
+        $('html, body').animate({
+            'scrollTop': $("div#contact").offset().top
+        }, 500);
+    });
+};
 
 $(document).ready(main);
