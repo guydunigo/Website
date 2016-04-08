@@ -16,9 +16,13 @@ var main = function() {
         }, "fast")
     });
     $("div.bar li a").hover(function() {
-        $(this).animate({ color: "#000" }, "fast");
+        if ($(this).hasClass("active") === false) {
+            $(this).animate({ color: "#000" }, "fast");
+        }
     }, function() {
-        $(this).animate({ color: "#ccc" }, "fast");
+        if ($(this).hasClass("active") === false) {
+            $(this).animate({ color: "#ccc" }, "fast");
+        }
     });
 }
 
