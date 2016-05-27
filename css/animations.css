@@ -1,0 +1,19 @@
+@keyframes titleBounceLeft {
+    0% { margin-left: 20px; margin-right: 5px; }
+    100% { margin-left: 10px; margin-right: 15px; }
+}
+
+@keyframes titleBounceRight {
+    0% { margin-left: 10px; margin-right: 15px; }
+    50% { margin-left: 35px; margin-right: -10px; }
+    100% { margin-left: 20px; margin-right: 5px; }
+}
+
+/*-- Website Title --*/
+.bar h1 a#webTitle {
+    animation: titleBounceRight 0.7s ease-in-out;
+}
+
+.bar h1 a#webTitle:hover {
+    animation: titleBounceLeft 0.3s ease-in-out;
+}

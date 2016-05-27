@@ -37,7 +37,7 @@ body {
     position: relative;
 }
 
-.bar h1 a {
+.bar h1 a#webTitle {
     margin: 5px;
     margin-left: 20px;
     /* Text infos */
@@ -49,20 +49,9 @@ body {
     color: black;
 }
 
-/*.bar h1 a:hover {
-    /*margin-left: 15px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-shadow: 5px 5px 3px rgb(0,0,0);
-    text-shadow: 5px 5px 3px rgba(0,0,0,0.4);
-    transition-delay: 0.05s;
-}*/
-
-.bar h1 a.active:hover {
-    margin: 5px;
-    margin-left: 20px;
-    text-shadow: none;
+.bar h1 a#webTitle:hover {
+    margin-left: 10px;
+    margin-right: 15px;
 }
 
 /*-- Nav --*/
@@ -89,20 +78,18 @@ ul.nav li a.active {
     color: #000;
 }
 
-ul.nav li a.active:hover {
-    color: #000;
-}
-
 /* The other links of the navbar */
 ul.nav a {
-    color: #cccccc;
+    color: #ccc;
     text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
-/*ul.nav li a:hover {
-    transition-delay: 0.05s;
+ul.nav li a:hover {
     color: #000;
-}*/
+}
 
 /*---- Big Title ----*/
 .header > h1 {

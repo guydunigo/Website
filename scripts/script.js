@@ -1,3 +1,4 @@
+/*
 var slideTitleLeft = function() {
     $("#webTitle").animate({
         "margin-left": "-=10px",
@@ -14,20 +15,10 @@ var slideTitleRight = function() {
         "margin-right": "+=5px"
     }, "fast")
 }
+*/
 
 var main = function() {
-    // Bounce effect on website name when the page loads and when hovered :
-    slideTitleLeft();
-    slideTitleRight();
-    $("#webTitle").hover(slideTitleLeft, slideTitleRight);
-    // Darken sections titles when hovered :
-    $("div.bar li a").hover(function() {
-        $(this).animate({ color: "#000" }, "fast");
-    }, function() {
-        $(this).animate({ color: "#ccc" }, "fast");
-    });
-
-    // Scroll to elements :
+    // Scroll to elements smoothly :
     $("a#aboutButton").click(function() {
         $('html, body').animate({
             'scrollTop': $("div#aboutMe").offset().top
