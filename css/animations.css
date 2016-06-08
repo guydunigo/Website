@@ -14,6 +14,46 @@
     100% { color: #000; border-bottom: 1px solid #000; }
 }
 
+@keyframes welcomeNav {
+    0% { top: -100px; }
+    90% { top: -100px; }
+    100% { top: 0; }
+}
+
+@keyframes welcomeHeader {
+    0% { height: 1000px; }
+    70% { height: 1000px; }
+    100% { height: 300px; }
+}
+
+@keyframes welcomeTitle {
+    0% { color: #000; color: rgba(255,255,255,0); }
+    100% { color: #fff; color: rgba(255,255,255,0.8); }
+}
+
+@keyframes welcomeMain {
+    0% { margin-top: 1000px; }
+    90% { margin-top: 1000px; }
+    100% { margin-top: 0px; }
+}
+
+/*-- Website welcoming --*/
+nav {
+    animation: welcomeNav 5s ease-in-out;
+}
+
+header {
+    animation: welcomeHeader 5s ease-in-out;
+}
+
+header > h1 {
+    animation: welcomeTitle 5s ease-in-out;
+}
+
+main {
+    animation: welcomeMain 5s ease-in-out;
+}
+
 /*-- Website Title --*/
 nav h1 a#webTitle {
     animation: titleBounceRight 0.7s ease-in-out;
