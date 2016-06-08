@@ -21,17 +21,17 @@ var main = function() {
     // Scroll to elements smoothly :
     $("a#aboutButton").click(function() {
         $('html, body').animate({
-            'scrollTop': $("div#aboutMe").offset().top
+            'scrollTop': $("#aboutMe").offset().top
         }, 500);
     });
     $("a#portfolioButton").click(function() {
         $('html, body').animate({
-            'scrollTop': $("div#portfolio").offset().top
+            'scrollTop': $("#portfolio").offset().top
         }, 500);
     });
     $("a#contactButton").click(function() {
         $('html, body').animate({
-            'scrollTop': $("div#contact").offset().top
+            'scrollTop': $("#contact").offset().top
         }, 500);
     });
 };
