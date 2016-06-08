@@ -88,13 +88,16 @@ ul.nav li a.active {
 ul.nav a {
     color: #888;
     text-decoration: none;
+    /*
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
-    transition: color 0.3s;
+    transition: color 0.3s;*/
+    border-bottom: 1px solid #fff;
 }
 
 ul.nav li a:hover {
     color: #000;
+    border-bottom: 1px solid #000;
 }
 
 /*---- Big Title ----*/

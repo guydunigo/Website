@@ -9,6 +9,11 @@
     100% { margin-left: 20px; margin-right: 5px; }
 }
 
+@keyframes linkHover {
+    0% { color: #888; border-bottom: 1px solid #fff; }
+    100% { color: #000; border-bottom: 1px solid #000; }
+}
+
 /*-- Website Title --*/
 nav h1 a#webTitle {
     animation: titleBounceRight 0.7s ease-in-out;
@@ -16,4 +21,9 @@ nav h1 a#webTitle {
 
 nav h1 a#webTitle:hover {
     animation: titleBounceLeft 0.3s ease-in-out;
+}
+
+/*-- Nav links --*/
+nav ul.nav a:hover {
+    animation: linkHover 0.3s ease-in-out;
 }
