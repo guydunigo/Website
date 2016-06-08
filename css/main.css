@@ -2,11 +2,11 @@
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     background: url("../img/bg_1.jpg") no-repeat center center fixed;
-    background-size: cover; 
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,18 +14,25 @@ body {
 
 /*------ Header ------*/
 header {
+    top: 0;
     padding: 0;
     margin: 0;
-    background: none;
+    height: 300px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 
 /*---- Bar ----*/
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 100%;
     margin: 0;
     background-color: rgb(256,256,256);
-    background-color: rgba(256,256,256,0.3);
+    /*background-color: rgba(256,256,256,0.9);*/
     padding: 5px;
     box-shadow: 0px 5px 5px rgb(0,0,0);
     box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
@@ -79,7 +86,7 @@ ul.nav li a.active {
 
 /* The other links of the navbar */
 ul.nav a {
-    color: #ccc;
+    color: #888;
     text-decoration: none;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
@@ -91,12 +98,13 @@ ul.nav li a:hover {
 }
 
 /*---- Big Title ----*/
-.welcome > h1 {
+header > h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 50px;
-    color: rgba(255,255,255,0.5);
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0.8);
 }
 
 /*------- Main ------*/
@@ -105,13 +113,10 @@ main {
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: rgb(256,256,256);
-    background-color: rgba(256,256,256,0.5);
-    margin: 2%;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 0px;
-    box-shadow: 5px 5px 5px rgb(0,0,0);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    background-color: rgba(256,256,256,0.8);
+    margin: 0;
+    box-shadow: 0px 5px 5px rgb(0,0,0);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
 }
 
 main h2 {
@@ -125,6 +130,10 @@ main h2 {
 main p {
     font-size: 24px;
     text-align: justify;
+}
+
+main #aboutMe span {
+    font-size: 1.5em;
 }
 
 /*------ Footer ------*/

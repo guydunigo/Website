@@ -34,6 +34,14 @@ var main = function() {
             'scrollTop': $("#contact").offset().top
         }, 500);
     });
+    /*
+    $(window).on("scroll",function() {
+        if ($(document).scrollTop() < $("main").position().top - $("nav").height())
+            $("nav").animate({"background-color": "rgba(256,256,256,0.9)"}, 100)
+        else
+            $("nav").animate({"background-color": "rgba(256,256,256,1)"}, 100)
+    })
+    */
 };
 
 $(document).ready(main);
