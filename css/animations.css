@@ -1,19 +1,3 @@
-@keyframes titleBounceLeft {
-    0% { margin-left: 20px; margin-right: 5px; }
-    100% { margin-left: 10px; margin-right: 15px; }
-}
-
-@keyframes titleBounceRight {
-    0% { margin-left: 10px; margin-right: 15px; }
-    50% { margin-left: 35px; margin-right: -10px; }
-    100% { margin-left: 20px; margin-right: 5px; }
-}
-
-@keyframes linkHover {
-    0% { color: #888; border-bottom: 1px solid #fff; }
-    100% { color: #000; border-bottom: 1px solid #000; }
-}
-
 @keyframes welcomeNav {
     0% { top: -100px; }
     90% { top: -100px; }
@@ -35,6 +19,22 @@
     0% { margin-top: 1000px; }
     90% { margin-top: 1000px; }
     100% { margin-top: 0px; }
+}
+
+@keyframes titleBounceLeft {
+    0% { margin-left: 20px; margin-right: 5px; }
+    100% { margin-left: 10px; margin-right: 15px; }
+}
+
+@keyframes titleBounceRight {
+    0% { margin-left: 10px; margin-right: 15px; }
+    50% { margin-left: 35px; margin-right: -10px; }
+    100% { margin-left: 20px; margin-right: 5px; }
+}
+
+@keyframes linkHover {
+    0% { color: #888; border-bottom: 1px solid #fff; }
+    100% { color: #000; border-bottom: 1px solid #000; }
 }
 
 /*-- Website welcoming --*/
