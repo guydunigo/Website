@@ -10,10 +10,10 @@
 }
 
 /*-- Website Title --*/
-.bar h1 a#webTitle {
+nav h1 a#webTitle {
     animation: titleBounceRight 0.7s ease-in-out;
 }
 
-.bar h1 a#webTitle:hover {
+nav h1 a#webTitle:hover {
     animation: titleBounceLeft 0.3s ease-in-out;
 }
