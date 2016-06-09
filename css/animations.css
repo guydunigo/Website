@@ -6,12 +6,14 @@
 
 @keyframes welcomeHeader {
     0% { height: 1000px; }
-    70% { height: 1000px; }
+    90% { height: 1000px; }
     100% { height: 300px; }
 }
 
 @keyframes welcomeTitle {
     0% { color: #000; color: rgba(255,255,255,0); }
+    40% { color: #000; color: rgba(255,255,255,0); }
+    85% { color: #fff; color: rgba(255,255,255,0.8); }
     100% { color: #fff; color: rgba(255,255,255,0.8); }
 }
 
@@ -39,19 +41,19 @@
 
 /*-- Website welcoming --*/
 nav {
-    animation: welcomeNav 10s ease-in-out;
+    animation: welcomeNav 7s ease-in-out;
 }
 
 header {
-    animation: welcomeHeader 10s ease-in-out;
+    animation: welcomeHeader 7s ease-in-out;
 }
 
 header > h1 {
-    animation: welcomeTitle 10s ease-in-out;
+    animation: welcomeTitle 7s ease-in-out;
 }
 
 main {
-    animation: welcomeMain 10s ease-in-out;
+    animation: welcomeMain 7s ease-in-out;
 }
 
 /*-- Website Title --*/
