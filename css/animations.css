@@ -1,6 +1,6 @@
 @keyframes welcomeNav {
-    0% { top: -100px; }
-    90% { top: -100px; }
+    0% { top: -500px; }
+    90% { top: -500px; }
     100% { top: 0; }
 }
 
