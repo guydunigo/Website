@@ -18,6 +18,12 @@ var slideTitleRight = function() {
 */
 
 var main = function() {
+    // Scroll to top button :
+    $("a.top").click(function() {
+        $("html, body").animate({
+            'scrollTop': 0
+        }, 500);
+    });
     // Scroll to elements smoothly :
     $("a#aboutButton").click(function() {
         $('html, body').animate({

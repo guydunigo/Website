@@ -149,9 +149,18 @@ footer {
 /*---- Copyright ----*/
 footer .copy {
     float: right;
-    position: relative;
     padding: 10px;
     padding-right: 3%;
     font-size: 14px;
-    color: #999999
+    color: #999;
+}
+
+/*--- Back to top ---*/
+footer a.top {
+    float: left;
+    padding: 1em;
+    margin: 0;
+    color: rgb(256,256,256);
+    font-size: 20px;
+    text-decoration: none;
 }
