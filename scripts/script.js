@@ -40,7 +40,6 @@ var main = function() {
             'scrollTop': $("#contact").offset().top
         }, 500);
     });
-    $("header, main, footer").show();
     /*
     $(window).on("scroll",function() {
         if ($(document).scrollTop() < $("main").position().top - $("nav").height())
@@ -51,6 +50,10 @@ var main = function() {
     */
 };
 
-// Hide everything until every is loaded;
+// Hide everything until everything (mostly for the bg pic) is loaded.
 $("header, main, footer").hide();
+$(window).load(function() {
+  $("header, main, footer").show();
+})
+
 $(document).ready(main);
