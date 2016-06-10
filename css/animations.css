@@ -41,19 +41,19 @@
 
 /*-- Website welcoming --*/
 nav {
-    animation: welcomeNav 7s ease-in-out;
+    animation: welcomeNav 5s ease-in-out;
 }
 
 header {
-    animation: welcomeHeader 7s ease-in-out;
+    animation: welcomeHeader 5s ease-in-out;
 }
 
 header > h1 {
-    animation: welcomeTitle 7s ease-in-out;
+    animation: welcomeTitle 5s ease-in-out;
 }
 
 main {
-    animation: welcomeMain 7s ease-in-out;
+    animation: welcomeMain 5s ease-in-out;
 }
 
 /*-- Website Title --*/
